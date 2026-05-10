@@ -1,0 +1,22 @@
+pin=101323
+present=int(input("enter the pin to check the balance: "))
+balance=int(input("enter the present amount in your account: "))
+if pin==present:
+    while True:
+        print("___welcome to atm simulation program___")
+        print("1.withdraw")
+        print("2.deposite")
+        print("3.check balance")
+        choice=int(input("enter the choice: "))
+        if choice==1:
+            amount=int(input("enter the amount to withdraw: "))
+            balance=balance-amount
+            print(balance)
+        elif choice==2:
+            amount=int(input("enter the amount to deposite: "))
+            balance=balance+amount
+            print(balance)
+        elif choice==3:
+            print("your balance amount is: ",balance)
+        else:
+            print("invalid input")
